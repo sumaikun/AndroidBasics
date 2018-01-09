@@ -15,6 +15,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         findViewById(R.id.button).setOnClickListener(new handleButton());
         findViewById(R.id.Btnarndemo).setOnClickListener(new demoButton());
+        findViewById(R.id.Btnstate).setOnClickListener(new stateButton());
+        findViewById(R.id.BtnBarcode).setOnClickListener(new barButton());
+        findViewById(R.id.Btnlights).setOnClickListener(new lightButton());
     }
 
     class handleButton implements View.OnClickListener {
@@ -29,6 +32,30 @@ public class MainActivity extends AppCompatActivity {
         public void onClick(View view) {
             Intent intent;
             intent = new Intent(MainActivity.this, ANR_example.class);
+            startActivity(intent);
+        }
+    }
+
+    class stateButton implements View.OnClickListener{
+        public void onClick(View view){
+            Intent intent;
+            intent = new Intent(MainActivity.this, StateExample.class);
+            startActivity(intent);
+        }
+    }
+
+    class barButton implements View.OnClickListener{
+        public void onClick(View view){
+            Intent intent;
+            intent = new Intent(MainActivity.this, Scan_barcode.class);
+            startActivity(intent);
+        }
+    }
+
+    class lightButton implements View.OnClickListener{
+        public void onClick(View view){
+            Intent intent;
+            intent = new Intent(MainActivity.this, Lights_animation.class);
             startActivity(intent);
         }
     }

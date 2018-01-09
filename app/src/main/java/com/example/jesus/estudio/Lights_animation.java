@@ -1,23 +1,24 @@
 package com.example.jesus.estudio;
 
-import android.content.Intent;
+import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
-import android.widget.TextView;
+import android.widget.ImageView;
 
-public class Screen2 extends AppCompatActivity {
-
+public class Lights_animation extends AppCompatActivity {
+    AnimationDrawable lightsAnimation;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        setContentView(R.layout.activity_screen2);
+        setContentView(R.layout.activity_lights_animation);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        ImageView lights = (ImageView) findViewById(R.id.imageView);
+        lightsAnimation=(AnimationDrawable) lights.getDrawable();
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -27,17 +28,11 @@ public class Screen2 extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
-        getSupportActionBar().setDisplayShowTitleEnabled(true);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        findViewById(R.id.button).setOnClickListener(new handleButton());
     }
 
-    class handleButton implements View.OnClickListener {
-        public void onClick(View view) {
-            TextView tview = (TextView) findViewById(R.id.textView);
-            tview.setText("changued");
-
-        }
+    public void onWindowFocusChanged(boolean hasFocus) {
+        super.onWindowFocusChanged(hasFocus);
+        lightsAnimation.start();
     }
 
 }

@@ -34,6 +34,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.jesus.estudio.MainActivity" />
         </activity>
+        <activity android:name=".StateExample" />
+        <activity
+            android:name=".Scan_barcode"
+            android:label="@string/title_activity_scan_barcode"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Lights_animation"
+            android:label="@string/title_activity_lights_animation"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

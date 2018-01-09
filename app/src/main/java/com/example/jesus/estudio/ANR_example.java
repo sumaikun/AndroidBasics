@@ -24,6 +24,8 @@ public class ANR_example extends AppCompatActivity {
         setContentView(R.layout.activity_anr_example);
         init();
         bt.setOnClickListener(new doButtonClick());
+
+
     }
 
     public void init()
