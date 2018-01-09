@@ -42,7 +42,8 @@
         <activity
             android:name=".Lights_animation"
             android:label="@string/title_activity_lights_animation"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Search"></activity>
     </application>
 
 </manifest>
