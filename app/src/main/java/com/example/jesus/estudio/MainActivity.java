@@ -18,6 +18,9 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.Btnstate).setOnClickListener(new stateButton());
         findViewById(R.id.BtnBarcode).setOnClickListener(new barButton());
         findViewById(R.id.Btnlights).setOnClickListener(new lightButton());
+        findViewById(R.id.Btnsearch).setOnClickListener(new searchButton());
+        findViewById(R.id.Btndice).setOnClickListener(new diceButton());
+        findViewById(R.id.BtnMail).setOnClickListener(new mailButton());
     }
 
     class handleButton implements View.OnClickListener {
@@ -59,6 +62,31 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         }
     }
+
+    class searchButton implements View.OnClickListener{
+        public void onClick(View view){
+            Intent intent;
+            intent = new Intent(MainActivity.this, Search.class);
+            startActivity(intent);
+        }
+    }
+
+    class diceButton implements View.OnClickListener{
+        public void onClick(View view){
+            Intent intent;
+            intent = new Intent(MainActivity.this, DiceDemo.class);
+            startActivity(intent);
+        }
+    }
+
+    class mailButton implements View.OnClickListener{
+        public void onClick(View view){
+            Intent intent;
+            intent = new Intent(MainActivity.this, Correo.class);
+            startActivity(intent);
+        }
+    }
+
 
     @Override
     protected void onStart(){
