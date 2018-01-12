@@ -45,7 +45,8 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Search" />
         <activity android:name=".DiceDemo" />
-        <activity android:name=".Correo"></activity>
+        <activity android:name=".Correo" />
+        <activity android:name=".ListActivity"></activity>
     </application>
 
 </manifest>

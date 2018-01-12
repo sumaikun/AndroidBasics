@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.Btnlights).setOnClickListener(new lightButton());
         findViewById(R.id.Btnsearch).setOnClickListener(new searchButton());
         findViewById(R.id.Btndice).setOnClickListener(new diceButton());
-        findViewById(R.id.BtnMail).setOnClickListener(new mailButton());
+        findViewById(R.id.BtnList).setOnClickListener(new listButton());
     }
 
     class handleButton implements View.OnClickListener {
@@ -87,6 +88,22 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    class listButton implements View.OnClickListener{
+        public void onClick(View view){
+            Intent intent;
+            intent = new Intent(MainActivity.this, ListActivity.class);
+            //startActivity(intent);
+            startActivityForResult(intent, 0);
+        }
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if(data != null && data.hasExtra("Order"))
+            Toast.makeText(this, data.getStringExtra("Order") + " ordered.", Toast.LENGTH_LONG).show();
+        else
+            Toast.makeText(this, "Nothing ordered!", Toast.LENGTH_LONG).show();
+    }
 
     @Override
     protected void onStart(){
