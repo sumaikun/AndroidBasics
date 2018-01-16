@@ -22,6 +22,8 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.Btnsearch).setOnClickListener(new searchButton());
         findViewById(R.id.Btndice).setOnClickListener(new diceButton());
         findViewById(R.id.BtnList).setOnClickListener(new listButton());
+        findViewById(R.id.BtnTwoLines).setOnClickListener(new twoButton());
+        findViewById(R.id.BtnMultLines).setOnClickListener(new multButton());
     }
 
     class handleButton implements View.OnClickListener {
@@ -97,6 +99,25 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    class  twoButton implements View.OnClickListener{
+        public void onClick(View view){
+            Intent intent;
+            intent = new Intent(MainActivity.this, TwoLines.class);
+            //startActivity(intent);
+            startActivityForResult(intent, 0);
+        }
+    }
+
+    class  multButton implements View.OnClickListener{
+        public void onClick(View view){
+            Intent intent;
+            intent = new Intent(MainActivity.this, MultLines.class);
+            //startActivity(intent);
+            startActivityForResult(intent, 0);
+        }
+    }
+
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if(data != null && data.hasExtra("Order"))
@@ -104,6 +125,8 @@ public class MainActivity extends AppCompatActivity {
         else
             Toast.makeText(this, "Nothing ordered!", Toast.LENGTH_LONG).show();
     }
+
+
 
     @Override
     protected void onStart(){
