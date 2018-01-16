@@ -48,7 +48,8 @@
         <activity android:name=".Correo" />
         <activity android:name=".ListActivity" />
         <activity android:name=".TwoLines" />
-        <activity android:name=".MultLines"></activity>
+        <activity android:name=".MultLines" />
+        <activity android:name=".TextWatcher"></activity>
     </application>
 
 </manifest>

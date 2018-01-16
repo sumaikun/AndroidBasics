@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.BtnList).setOnClickListener(new listButton());
         findViewById(R.id.BtnTwoLines).setOnClickListener(new twoButton());
         findViewById(R.id.BtnMultLines).setOnClickListener(new multButton());
+        findViewById(R.id.BtnTextWatcher).setOnClickListener(new twatchButton());
     }
 
     class handleButton implements View.OnClickListener {
@@ -112,6 +113,15 @@ public class MainActivity extends AppCompatActivity {
         public void onClick(View view){
             Intent intent;
             intent = new Intent(MainActivity.this, MultLines.class);
+            //startActivity(intent);
+            startActivityForResult(intent, 0);
+        }
+    }
+
+    class  twatchButton implements View.OnClickListener{
+        public void onClick(View view){
+            Intent intent;
+            intent = new Intent(MainActivity.this, TextWatcherE.class);
             //startActivity(intent);
             startActivityForResult(intent, 0);
         }
