@@ -134,10 +134,28 @@
             android:id="@+id/BtnTextWatcher"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="MultLineas"
+            android:text="TextWatcher"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/BtnPortrait"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Watchmode"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/BtnPress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Press"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
         </LinearLayout>
 

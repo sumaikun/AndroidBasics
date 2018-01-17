@@ -49,7 +49,9 @@
         <activity android:name=".ListActivity" />
         <activity android:name=".TwoLines" />
         <activity android:name=".MultLines" />
-        <activity android:name=".TextWatcher"></activity>
+        <activity android:name=".TextWatcherE" />
+        <activity android:name=".Mportrait" />
+        <activity android:name=".Press"></activity>
     </application>
 
 </manifest>

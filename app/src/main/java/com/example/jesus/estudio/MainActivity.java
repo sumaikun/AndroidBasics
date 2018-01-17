@@ -25,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.BtnTwoLines).setOnClickListener(new twoButton());
         findViewById(R.id.BtnMultLines).setOnClickListener(new multButton());
         findViewById(R.id.BtnTextWatcher).setOnClickListener(new twatchButton());
+        findViewById(R.id.BtnPortrait).setOnClickListener(new portraitButton());
+        findViewById(R.id.BtnPress).setOnClickListener(new pressButton());
     }
 
     class handleButton implements View.OnClickListener {
@@ -122,8 +124,26 @@ public class MainActivity extends AppCompatActivity {
         public void onClick(View view){
             Intent intent;
             intent = new Intent(MainActivity.this, TextWatcherE.class);
-            //startActivity(intent);
-            startActivityForResult(intent, 0);
+            startActivity(intent);
+
+        }
+    }
+
+    class  portraitButton implements View.OnClickListener{
+        public void onClick(View view){
+            Intent intent;
+            intent = new Intent(MainActivity.this, Mportrait.class);
+            startActivity(intent);
+
+        }
+    }
+
+    class  pressButton implements View.OnClickListener{
+        public void onClick(View view){
+            Intent intent;
+            intent = new Intent(MainActivity.this, Press.class);
+            startActivity(intent);
+
         }
     }
 
