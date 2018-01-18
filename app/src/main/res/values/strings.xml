@@ -8,4 +8,5 @@
     <string name="prueba_de_enlace">Prueba de Enlace</string>
     <string name="animacion">Animación</string>
     <string name="title_activity_lights_animation">Lights_animation</string>
+    <string name="about">This is our App, please see http://www.example.com. Email support at support@example.com.</string>
 </resources>
