@@ -51,7 +51,10 @@
         <activity android:name=".MultLines" />
         <activity android:name=".TextWatcherE" />
         <activity android:name=".Mportrait" />
-        <activity android:name=".Press"></activity>
+        <activity android:name=".Press" />
+        <activity android:name=".Swiper" />
+        <activity android:name=".ESpinner" />
+        <activity android:name=".Size"></activity>
     </application>
 
 </manifest>

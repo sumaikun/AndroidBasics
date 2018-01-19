@@ -28,6 +28,9 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.BtnPortrait).setOnClickListener(new portraitButton());
         findViewById(R.id.BtnPress).setOnClickListener(new pressButton());
         findViewById(R.id.BtnAbout).setOnClickListener(new aboutButton());
+        findViewById(R.id.BtnSwipe).setOnClickListener(new swipeButton());
+        findViewById(R.id.BtnSizes).setOnClickListener(new SizeButton());
+        findViewById(R.id.BtnSpinner).setOnClickListener(new SpinnerButton());
     }
 
     class handleButton implements View.OnClickListener {
@@ -151,6 +154,33 @@ public class MainActivity extends AppCompatActivity {
     class  aboutButton implements View.OnClickListener{
         public void onClick(View view){
             AboutBox.Show(MainActivity.this);
+
+        }
+    }
+
+    class  swipeButton implements View.OnClickListener{
+        public void onClick(View view){
+            Intent intent;
+            intent = new Intent(MainActivity.this, Swiper.class);
+            startActivity(intent);
+
+        }
+    }
+
+    class  SizeButton implements View.OnClickListener{
+        public void onClick(View view){
+            Intent intent;
+            intent = new Intent(MainActivity.this, Size.class);
+            startActivity(intent);
+
+        }
+    }
+
+    class  SpinnerButton implements View.OnClickListener{
+        public void onClick(View view){
+            Intent intent;
+            intent = new Intent(MainActivity.this, ESpinner.class);
+            startActivity(intent);
 
         }
     }

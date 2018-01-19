@@ -166,6 +166,33 @@
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
+            <Button
+                android:id="@+id/BtnSwipe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Swipe"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/BtnSizes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Size"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/BtnSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Spinner"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
         </LinearLayout>
 
     </ScrollView>

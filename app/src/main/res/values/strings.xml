@@ -9,4 +9,30 @@
     <string name="animacion">Animación</string>
     <string name="title_activity_lights_animation">Lights_animation</string>
     <string name="about">This is our App, please see http://www.example.com. Email support at support@example.com.</string>
+    <string name="instructions">Please Swipe</string>
+    <string-array name="desserts">
+        <item>Cupcake</item>
+        <item>Donut</item>
+        <item>Eclair</item>
+        <item>Froyo</item>
+        <item>Gingerbread</item>
+        <item>Honeycomb</item>
+        <item>Ice Cream Sandwich</item>
+        <item>Jelly Bean</item>
+        <item>Kit Kat</item>
+        <item>Lollipop</item>
+        <item>Marshmallow</item>
+        <item>Nougat</item>
+    </string-array>
+    <string-array name="coffeeType">
+        <item>Filter</item>
+        <item>Americano</item>
+        <item>Latte</item>
+        <item>Espresso</item>
+        <item>Cappucino</item>
+        <item>Mocha</item>
+        <item>Skinny Latte</item>
+        <item>Espresso Corretto</item>
+    </string-array>
+    <string name="coffePrompt">Choose Coffe</string>
 </resources>

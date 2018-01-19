@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jesus.estudio.Size">
+
+<TextView
+    android:id="@+id/labXY"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:text="X,Y"
+    android:textAppearance="@android:style/TextAppearance.Large" />
+
+<TextView
+    android:id="@+id/textXY"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_marginLeft="10dp"
+    android:layout_toRightOf="@+id/labXY"
+    android:background="#ff000000"
+    android:text="\?"
+    android:textAppearance="@android:style/TextAppearance.Large.Inverse" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textXY"
+        app:srcCompat="@drawable/dice3droll" />
+</RelativeLayout>
