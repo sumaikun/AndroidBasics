@@ -16,7 +16,7 @@ public class ESpinner extends AppCompatActivity {
         ArrayAdapter adapter = ArrayAdapter.createFromResource(
                 this,
                 R.array.coffeeType,
-                android.R.layout.simple_spinner_item);
+                R.layout.spinner_style);
         //link the adapter to the spinner
         Spinner coffeeChoice = (Spinner) findViewById(R.id.chooseCoffee);
         coffeeChoice.setAdapter(adapter);

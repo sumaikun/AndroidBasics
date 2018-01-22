@@ -31,6 +31,10 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.BtnSwipe).setOnClickListener(new swipeButton());
         findViewById(R.id.BtnSizes).setOnClickListener(new SizeButton());
         findViewById(R.id.BtnSpinner).setOnClickListener(new SpinnerButton());
+        findViewById(R.id.BtnContext).setOnClickListener(new ContextMenuButton());
+        findViewById(R.id.BtnSeekbar).setOnClickListener(new SeekBarButton());
+        findViewById(R.id.BtnPrimeNumber).setOnClickListener(new PrimeNumberButton());
+        findViewById(R.id.BtnHtml).setOnClickListener(new HtmlButton());
     }
 
     class handleButton implements View.OnClickListener {
@@ -180,6 +184,42 @@ public class MainActivity extends AppCompatActivity {
         public void onClick(View view){
             Intent intent;
             intent = new Intent(MainActivity.this, ESpinner.class);
+            startActivity(intent);
+
+        }
+    }
+
+    class  SeekBarButton implements View.OnClickListener{
+        public void onClick(View view){
+            Intent intent;
+            intent = new Intent(MainActivity.this, EseekBar.class);
+            startActivity(intent);
+
+        }
+    }
+
+    class  ContextMenuButton implements View.OnClickListener{
+        public void onClick(View view){
+            Intent intent;
+            intent = new Intent(MainActivity.this, MenuContextEActivity.class);
+            startActivity(intent);
+
+        }
+    }
+
+    class  PrimeNumberButton implements View.OnClickListener{
+        public void onClick(View view){
+            Intent intent;
+            intent = new Intent(MainActivity.this, PrimeNumber.class);
+            startActivity(intent);
+
+        }
+    }
+
+    class  HtmlButton implements View.OnClickListener{
+        public void onClick(View view){
+            Intent intent;
+            intent = new Intent(MainActivity.this, HtmlActivity.class);
             startActivity(intent);
 
         }

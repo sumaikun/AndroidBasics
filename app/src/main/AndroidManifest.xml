@@ -54,7 +54,11 @@
         <activity android:name=".Press" />
         <activity android:name=".Swiper" />
         <activity android:name=".ESpinner" />
-        <activity android:name=".Size"></activity>
+        <activity android:name=".Size" />
+        <activity android:name=".MenuContextEActivity" />
+        <activity android:name=".EseekBar" />
+        <activity android:name=".PrimeNumber" />
+        <activity android:name=".HtmlActivity"></activity>
     </application>
 
 </manifest>
